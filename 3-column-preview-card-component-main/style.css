@@ -1,0 +1,141 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparentwhite : hsla(0, 0%, 100%, 0.75);
+    --gray : hsl(0, 0%, 95%);
+    --font-one :  'Lexend Deca', sans-serif;
+    --font-two: 'Big Shoulders Display', cursive;
+}
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    background: var(--gray);
+}
+h1, .btn{
+    color: var(--gray);
+}
+p{
+    color: var(--Transparentwhite);
+}
+
+.one{
+    background: var(--orange);
+    padding: 2rem 1.5rem;
+    max-width: 290px;
+    border-radius:.8rem .8rem 0 0  ;
+}
+.two{
+    background-color: var(--dark-cyan);
+    padding: 2rem 1.5rem;
+    max-width: 290px;
+    
+}
+
+
+.three{
+    background: var(--Very-dark-cyan);
+    padding: 2rem 1.5rem;
+    max-width: 290px;
+    border-radius:0 0 .8rem .8rem   ;
+}
+h1{
+    font-family: var(--font-two);
+    font-weight: 700;
+    padding-block: 1.7rem ;
+}
+p{
+    width: 90%;
+    line-height: 1.6;
+    opacity: .9;
+    
+}
+
+p, .btn{
+    font-family: var(--font-one);
+    font-weight: 400;
+}
+
+
+ .one .btn{
+    margin-block: 2rem;
+    padding: .8rem 1.6rem;
+    background: var(--gray);
+    color: var(--orange);
+    display: inline-block;
+    border-radius: 1.4rem;
+    text-align: center;
+    border: 2px solid transparent;
+}
+.two .btn{
+    margin-block: 2rem;
+    padding: .8rem 1.6rem;
+    background: var(--gray);
+    color: var(--Very-dark-cyan);
+    display: inline-block;
+    border-radius: 1.4rem;
+    border: 2px solid transparent;
+}
+.three .btn{
+    margin-block: 2rem;
+    padding: .8rem 1.6rem;
+    background: var(--gray);
+    color: var(--Very-dark-cyan);
+    display: inline-block;
+    border-radius: 1.4rem;
+    border: 2px solid transparent;
+}
+
+section{
+    max-width: 290px;
+    margin: 100px auto;
+    
+}
+
+
+
+.btn:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Desktop */
+
+@media (min-width:1000px){
+   body{
+       font-size: 16px;
+   }
+   
+   
+   
+    section{
+        display: flex;
+        max-width: 870px;
+
+
+    }
+    .one{
+        flex-basis: 100%;
+        border-radius:.8rem 0 0 .8rem ;
+    }
+    .two{
+        flex-basis: 100%;
+        border-radius: none;
+    }
+    .three{
+        flex-basis: 100%;
+        border-radius: 0 .8rem .8rem 0;
+    }
+
+}
